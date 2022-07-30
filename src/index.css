@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: cyan;
+  font-family: 'Inter', sans-serif;
+}
+
+.up-container{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.up-container h3{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: black;
+}
+
+.up-container .form{
+  margin-top: 20px;
+  width: 300px;
+  height: 100px;
+  margin-left: 20px;
+}
+
+.up-container .form input{
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 7px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: grey;
+  padding: 5px 10px;
+}
+
+.up-container .form .error{
+  border: 2px solid red ;
+}
+
+.up-container .form input:focus{
+  outline: none;
+  border: 2px solid darkcyan;
+}
+
+.up-container .up-btn{
+  width: 100px;
+  height: 40px;
+  border-radius: 7px;
+  color: whitesmoke;
+  background-color: #0000ffbd;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: .5s ease background-color;
+}
+
+.up-container .up-btn:hover{
+  background-color: #0000FF;
+}
+
+.down-container{
+  min-height: 80vh;
+  width: 90%;
+  display: flex;
+  flex-wrap:wrap;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.down-container .color-item{
+  height: 120px;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.down-container .color-item.light{
+  color: whitesmoke;
+}
+
+.down-container .color-item h5{
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.down-container .color-item p{
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.down-container .color-item span{
+  display: block;
+  font-size: .62rem;
+  margin-top: 20px;
+  color: grey;
+}
